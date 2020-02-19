@@ -46,6 +46,6 @@ I used a kanban board on Trello to manage my workflow during the project, the bo
 
 ### Start Point
 
-![A picture of the trello board, started on the first week. The Product Backlog, The Sprint Backlog, the Tasks for the first week have been added. Only the 'Start the Trello board' task has been completed](https://imgur.com/op4ChN4)
+![A picture of the trello board, started on the first week. The Product Backlog, The Sprint Backlog, the Tasks for the first week have been added. Only the 'Start the Trello board' task has been completed](https://i.imgur.com/op4ChN4.png)
 
 At the start of the project, I decided
