@@ -7,31 +7,31 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
 ## Table of Contents
 
 1. Project Brief
-..* Proposal
+..+ Proposal
 2. Trello Board
 ..1. Start Point
 ..2. End Point
 3. Risk Assessment
 4. Project Architecture
-..* Entity Relationship Diagram
-..* Architecture Diagram
-..* Issues Encountered
+..+ Entity Relationship Diagram
+..+ Architecture Diagram
+..+ Issues Encountered
 5. Design Considerations
-..* Front End
-..* Back End
-..* UI
+..+ Front End
+..+ Back End
+..+ UI
 6. Testing
-..* Pytest Testing
-..* Selenium Testing
-..* Final Report
+..+ Pytest Testing
+..+ Selenium Testing
+..+ Final Report
 7. Deployment
-..* Toolset
-..* CI Server Implementation
-..* Branch and Merge Log
+..+ Toolset
+..+ CI Server Implementation
+..+ Branch and Merge Log
 8. Front End Implementation
 9. Improvements for Future Versions
-* Authors
-* Acknowledgements
++ Authors
++ Acknowledgements
 
 ## Project Brief
 ---
