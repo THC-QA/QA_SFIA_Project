@@ -50,7 +50,7 @@ Due to this setup sprints could be passed through development, and, if required,
 
 ![A picture of the trello board, started on the first week. The Product Backlog, The Sprint Backlog, the Tasks for the first week have been added. Only the 'Start the Trello board' task has been completed](https://i.imgur.com/op4ChN4.png)
 
-At the start of the project, I focussed on the four tasks most easily completable in the first week of training: Starting the Kanban board [itself](200~https://trello.com/b/8xaM1s0K/qa-week-5-individual-project-hotsaucerecipe), starting this document to streamline my future workflow, instituting a github repository for the project, which can be found [here](https://github.com/THC-QA/QA_SFIA_Project), and initialising the risk assessment for the project in line with my initial understanding.
+At the start of the project, I focussed on the four tasks most easily completable in the first week of training: Starting the Kanban board [itself](https://trello.com/b/8xaM1s0K/qa-week-5-individual-project-hotsaucerecipe), starting this documentation to streamline my future workflow, instituting a github repository for the project, which can be found [here](https://github.com/THC-QA/QA_SFIA_Project), and initialising the risk assessment for the project in line with my initial understanding.
 
 ### Rolling Changes
 
