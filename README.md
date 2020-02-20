@@ -37,7 +37,6 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
 ---
 
 ### Proposal
----
 
 ## Trello Board
 ---
