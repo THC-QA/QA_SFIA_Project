@@ -54,6 +54,16 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 ### Rolling Changes
 
-
-
 ### End Point
+
+## Risk Assessment
+---
+
+## Project Architecture
+---
+
+### Entity Relationships
+
+### Overall Architecture
+
+### Issues Encountered
