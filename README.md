@@ -60,7 +60,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 |Risk No.|Risk|Description|Hazard|Likelihood|Impact|Solution|
 |---|---|---|---|---|---|---|
-|1.1.1|Overrunning on GCP free data limits.|Worst case scenario, databases are unaccessable.|1|5|Continue monitoring GCP usage. Copy databases offline as final backup.|
+|1.1.1|Overrunning on GCP free data limits.|An instance is left running, or an account breach enables the resources on the account to be drained.|Worst case scenario, databases are unaccessable.|1|5|Continue monitoring GCP usage. Copy databases offline as final backup.|
 
 ## Project Architecture
 ---
