@@ -2,7 +2,7 @@
 ---
 # Hot Sauce Recipe Database
 ---
-Written in reference to QAC - Fundamental Project Specification (DevOps Core) - revised edition. This project is for the purpose of fulfilling the specification definition for the project assignment due Week 5 of the DevOps February 17 intake cohort.
+Written in reference to QAC - Fundamental Project Specification (DevOps Core) - revised edition. This project is for the purpose of fulfilling the specification definition for the project assignment due Week 5 of the DevOps February 17 2020 intake cohort.
 
 ## Table of Contents
 
