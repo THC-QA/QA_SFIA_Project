@@ -8,7 +8,7 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
 
 1. Project Brief
     + Proposal
-2. [Trello Board](https://github.com/THC-QA/QA_SFIA_Project/README##Trello_Board)
+2. [Trello Board](https://github.com/THC-QA/QA_SFIA_Project/tree/developer/README##Trello_Board)
     + Start Point
     + Rolling Changes
     + End Point
