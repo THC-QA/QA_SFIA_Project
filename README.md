@@ -6,17 +6,17 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
 
 ## Table of Contents
 
-1. Project Brief
-    + Proposal
+1. [Project Brief](#project-brief)
+    + [Proposal](#proposal)
 2. [Trello Board](#trello-board)
-    + Start Point
-    + Rolling Changes
-    + End Point
-3. Risk Assessment
-4. Project Architecture
-    + Entity Relationship Diagram
-    + Architecture Diagram
-    + Issues Encountered
+    + [Start Point](#start-board)
+    + [Rolling Changes](#rolling-changes)
+    + [End Point](#end-point)
+3. [Risk Assessment](#risk-assessment)
+4. [Project Architecture](#project-architecture)
+    + [Entity Relationship Diagram](#entity-relationship-diagram)
+    + [Architecture Diagram](#architecture-diagram)
+    + [Issues Encountered](#issues-encountered)
 5. Design Considerations
     + Front End
     + Back End
@@ -64,6 +64,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 ---
 
 |Risk No.|Risk|Description|Hazard|Likelihood|Impact|Solution|
+|---|---|---|---|---|---|---|
+|Cloud SQL Risks|||||||
 |---|---|---|---|---|---|---|
 |1.1.1|Overrunning on GCP free data limits.|An instance is left running, or an account breach enables the resources on the account to be drained.|Worst case scenario, databases are unaccessable.|1|5|Continue monitoring GCP usage. Copy databases offline as final backup.|
 |1.1.2.1|Database security: SQL|The GCP server is breached in some way, compromising data integrity.|Worst case scenario, data is lost, or user data is compromised.|3|5|Ensure user and personal data is encrypted, and passwords hashed, before being moved to the database.|
