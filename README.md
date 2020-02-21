@@ -23,6 +23,7 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
     + UI
 6. Testing
     + Pytest Testing
+    + Postman Testing
     + Final Report
 7. Deployment
     + Toolset
@@ -52,6 +53,10 @@ Due to this setup sprints could be passed through development, and, if required,
 At the start of the project, I focussed on the four tasks most easily completable in the first week of training: Starting the Kanban board [itself](https://trello.com/b/8xaM1s0K/qa-week-5-individual-project-hotsaucerecipe), starting this documentation to streamline my future workflow, instituting a github repository for the project, which can be found [here](https://github.com/THC-QA/QA_SFIA_Project), and initialising the risk assessment for the project in line with my initial understanding.
 
 ### Rolling Changes
+
++ The first major change to the Kanban board was a respec to denote the removing of Selenium testing from the project, due to the lack of javascript implementation. In replacement, a provisional addition of Postman testing was added, so as to validate the REST API, and therefore CRUD functionality of our APIs. In addition, issues with reimaging hardware lead to the need to implement Visual Code Studio usage. To this end I installed the Remote SSH, mySQL, Python, and Code Spellchecker extensions, so as to improve project flow. Notepad++ is being explored in replacement of VIM for GitBASH. The database has been implemented as a simple relationship between two main tables, the user table has been omitted until hashing of passwords and pre-encryption can be handled on the app side.
+
++ 
 
 ### End Point
 
