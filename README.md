@@ -56,7 +56,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + The first major change to the Kanban board was a respec to denote the removing of Selenium testing from the project, due to the lack of javascript implementation. In replacement, a provisional addition of Postman testing was added, so as to validate the REST API, and therefore CRUD functionality of our APIs. In addition, issues with reimaging hardware lead to the need to implement Visual Code Studio usage. To this end I installed the Remote SSH, mySQL, Python, and Code Spellchecker extensions, so as to improve project flow. Notepad++ is being explored in replacement of VIM for GitBASH. The database has been implemented as a simple relationship between two main tables, the user table has been omitted until hashing of passwords and pre-encryption can be handled on the app side.
 
-+ 
++ An ERD was started on LucidChart, and a mockup of the database instituted on a GCP MySQL server. Should be noted due to the particular relationship between recipes and ingredients that it would be more efficient to use a noSQL database, albeit outside the project scope. The risk assessment was started, and will be added to as the project continues. Whilst this entire system could be run in the GitHub projects utility, this is again outside the scope of the brief. A GCP Compute instance is running Ubuntu is being used for the pythonic programming, and has been updated with the relevant modules, including Flask. Visual Studio Code is used for access.
 
 ### End Point
 
@@ -65,6 +65,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 |Risk No.|Risk|Description|Hazard|Likelihood|Impact|Solution|
 |---|---|---|---|---|---|---|
+|1.0.1|Overrun on time.|Due to poor time management, the project is not completed.|Worst case scenario, marks are lost due to lack of coverage of brief.|2|5|Make good use of Kanban to manage workflow, and efficient time use of office resources.|
+|1.0.2|Data breach on workstation.|Due to accident or malicious action, workstation is compromised.|Worst case scenario, severe progress loss.|1|5|Change passwords on workstation, keep e-services logged off when not in use.|
 |1.1.1|Overrunning on GCP free data limits.|An instance is left running, or an account breach enables the resources on the account to be drained.|Worst case scenario, databases are unaccessable.|1|5|Continue monitoring GCP usage. Copy databases offline as final backup.|
 |1.1.2.1|Database security: SQL|The GCP server is breached in some way, compromising data integrity.|Worst case scenario, data is lost, or user data is compromised.|3|5|Ensure user and personal data is encrypted, and passwords hashed, before being moved to the database.|
 |1.1.2.2|Database security: SSH|Unmanaged connections cause data leak or damage, keys are lost or stolen.| Worst case scenario, GDPR noncompliance or total data compromisation.|2|5|Learn and make use of GCP's SSH key management role system, and implement it correctly.|
