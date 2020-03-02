@@ -58,6 +58,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + An ERD was started on LucidChart, and a mockup of the database instituted on a GCP MySQL server. Should be noted due to the particular relationship between recipes and ingredients that it would be more efficient to use a noSQL database, albeit outside the project scope. The risk assessment was started, and will be added to as the project continues. Whilst this entire system could be run in the GitHub projects utility, this is again outside the scope of the brief. A GCP Compute instance is running Ubuntu is being used for the pythonic programming, and has been updated with the relevant modules, including Flask. Visual Studio Code is used for access.
 
++The ERD was edited into its final version, and will be coloured appropriately to reflect the state of project at completion. An mySQL file has been created in order to institute the framework of the database to fulfil the MVP of the project brief.
+
 ### End Point
 
 ## Risk Assessment
@@ -70,6 +72,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 |1.1.1|Overrunning on GCP free data limits.|An instance is left running, or an account breach enables the resources on the account to be drained.|Worst case scenario, databases are unaccessable.|1|5|Continue monitoring GCP usage. Copy databases offline as final backup.|
 |1.1.2.1|Database security: SQL|The GCP server is breached in some way, compromising data integrity.|Worst case scenario, data is lost, or user data is compromised.|3|5|Ensure user and personal data is encrypted, and passwords hashed, before being moved to the database.|
 |1.1.2.2|Database security: SSH|Unmanaged connections cause data leak or damage, keys are lost or stolen.| Worst case scenario, GDPR noncompliance or total data compromisation.|2|5|Learn and make use of GCP's SSH key management role system, and implement it correctly.|
+|1.1.2.3|Database security: SQL-I|Unsanitised user input allows SQL injection into the database.|Worst case scenario, database is maliciously destroyed.|2|5|Ensure any user accessible inputs are sanitised, and implement permission roles.|
 
 ## Project Architecture
 ---
