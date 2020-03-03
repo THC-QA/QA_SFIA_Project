@@ -79,6 +79,12 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 ### Entity Relationships
 
+The core of the project comprises three linked tables, two main and one joining, in a mySQL database. The joining table links data from recipe and ingredients tables to show which ingredients are used in the methods for particular recipes. This architecture reduces the load that would be required for multiple empty fields for recipes as different recipes have different numbers of ingredients used for them.
+
+Ancilliary to this are the user and admin tables, which aren't required to be instituted for project completion. This being said, they represent two different use cases for site approach. In terms of security and database management, they would have different permission roles and security provisions vis a vis the database itself, and most aspects of site architecture.
+
+To represent this more clearly, I have included use case diagram.
+
 ### Overall Architecture
 
 ### Issues Encountered
