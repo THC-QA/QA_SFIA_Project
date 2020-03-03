@@ -58,7 +58,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + An ERD was started on LucidChart, and a mockup of the database instituted on a GCP MySQL server. Should be noted due to the particular relationship between recipes and ingredients that it would be more efficient to use a noSQL database, albeit outside the project scope. The risk assessment was started, and will be added to as the project continues. Whilst this entire system could be run in the GitHub projects utility, this is again outside the scope of the brief. A GCP Compute instance is running Ubuntu is being used for the pythonic programming, and has been updated with the relevant modules, including Flask. Visual Studio Code is used for access.
 
-+The ERD was edited into its final version, and will be coloured appropriately to reflect the state of project at completion. An mySQL file has been created in order to institute the framework of the database to fulfil the MVP of the project brief.
++ The ERD was edited into its final version, and will be coloured appropriately to reflect the state of project at completion. A mySQL file has been created in order to institute the framework of the database to fulfil the MVP of the project brief. A further mySQL file acts as a secondary backup to populate the tables with example data to showcase the website.
 
 ### End Point
 
