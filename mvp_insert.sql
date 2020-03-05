@@ -1,4 +1,5 @@
 BEGIN;
+use sfia_project;
 
 INSERT IGNORE INTO ingredients (ingredient_name, ingredient_type)
 VALUES ("Scotch Bonnet", "Chilli");
