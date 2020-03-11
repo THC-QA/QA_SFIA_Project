@@ -60,6 +60,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + The ERD was edited into its final version, and will be coloured appropriately to reflect the state of project at completion. A mySQL file has been created in order to institute the framework of the database to fulfil the MVP of the project brief. A further mySQL file acts as a secondary backup to populate the tables with example data to showcase the website.
 
++ A barebones CRUD functional website has been created in python, HTML, and CSS. It uses the Flask module with Jinja2, mysqlDB, and WTForms. Issues have been encountered involving WTForms implementation. Several of the user stories have been completed, but the others are on hold until the usefulness of a user system is decided on. A Requirements file has been added to the Flask app, currently hosted on a different repository pending Jenkins integration.
+
 ### End Point
 
 ## Risk Assessment
@@ -73,6 +75,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 |1.1.2.1|Database security: SQL|The GCP server is breached in some way, compromising data integrity.|Worst case scenario, data is lost, or user data is compromised.|3|5|Ensure user and personal data is encrypted, and passwords hashed, before being moved to the database.|
 |1.1.2.2|Database security: SSH|Unmanaged connections cause data leak or damage, keys are lost or stolen.| Worst case scenario, GDPR noncompliance or total data compromisation.|2|5|Learn and make use of GCP's SSH key management role system, and implement it correctly.|
 |1.1.2.3|Database security: SQL-I|Unsanitised user input allows SQL injection into the database.|Worst case scenario, database is maliciously destroyed.|2|5|Ensure any user accessible inputs are sanitised, and implement permission roles.|
+|1.2.1|Flask password storage|Although Flask uses passwords fields, hashing isn't implemented natively.|Worst case scenario, hosted user data is found in contravension of GDPR regulation, incurring heavy fines.|4|4|Ensure hashing and data encryption is implemented before data is passed to the SQL server.|
 
 ## Project Architecture
 ---
