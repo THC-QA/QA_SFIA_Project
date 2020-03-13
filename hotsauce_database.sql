@@ -4,13 +4,13 @@ DROP TABLE IF EXISTS ingredients;
 DROP TABLE IF EXISTS recipes;
 CREATE TABLE ingredients (
 id INT(5) NOT NULL AUTO_INCREMENT,
-ingredient_name VARCHAR(30) NOT NULL,
+ingredient_name VARCHAR(30) NOT NULL UNIQUE,
 ingredient_type VARCHAR(10) NOT NULL,
 PRIMARY KEY(id)
 );
 CREATE TABLE recipes (
 id INT(5) NOT NULL AUTO_INCREMENT,
-recipe_name VARCHAR(50) NOT NULL,
+recipe_name VARCHAR(50) NOT NULL UNIQUE,
 recipe_method VARCHAR(10000) NOT NULL,
 PRIMARY KEY(id)
 );
