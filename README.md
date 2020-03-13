@@ -62,6 +62,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + A barebones CRUD functional website has been created in python, HTML, and CSS. It uses the Flask module with Jinja2, mysqlDB, and WTForms. Issues have been encountered involving WTForms implementation. Several of the user stories have been completed, but the others are on hold until the usefulness of a user system is decided on. A Requirements file has been added to the Flask app, currently hosted on a different repository pending Jenkins integration.
 
++ Website updated to full compliance with brief. User stories revised to reflect updated understanding of technical complexities. Favicon added as joke branding. Jenkinsfile added, and installation and pre-installation processing started. Problems involving exported environmental variables.
+
 ### End Point
 
 ## Risk Assessment
@@ -76,6 +78,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 |1.1.2.2|Database security: SSH|Unmanaged connections cause data leak or damage, keys are lost or stolen.| Worst case scenario, GDPR noncompliance or total data compromisation.|2|5|Learn and make use of GCP's SSH key management role system, and implement it correctly.|
 |1.1.2.3|Database security: SQL-I|Unsanitised user input allows SQL injection into the database.|Worst case scenario, database is maliciously destroyed.|2|5|Ensure any user accessible inputs are sanitised, and implement permission roles.|
 |1.2.1|Flask password storage|Although Flask uses passwords fields, hashing isn't implemented natively.|Worst case scenario, hosted user data is found in contravension of GDPR regulation, incurring heavy fines.|4|4|Ensure hashing and data encryption is implemented before data is passed to the SQL server.|
+|1.2.2|Flask sql iteration|Flasks handling of mySQL commands requires reliable data structure.|Worst case scenario, repeated mySQL errors thrown due to column incompatability.|3|3|Restructure database to ensure compatability errors are dodged or excepted.|
 
 ## Project Architecture
 ---
