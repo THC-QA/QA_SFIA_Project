@@ -79,18 +79,24 @@ At the start of the project, I focussed on the four tasks most easily completabl
 |1.1.2.3|Database security: SQL-I|Unsanitised user input allows SQL injection into the database.|Worst case scenario, database is maliciously destroyed.|2|5|Ensure any user accessible inputs are sanitised, and implement permission roles.|
 |1.2.1|Flask password storage|Although Flask uses passwords fields, hashing isn't implemented natively.|Worst case scenario, hosted user data is found in contravension of GDPR regulation, incurring heavy fines.|4|4|Ensure hashing and data encryption is implemented before data is passed to the SQL server.|
 |1.2.2|Flask sql iteration|Flasks handling of mySQL commands requires reliable data structure.|Worst case scenario, repeated mySQL errors thrown due to column incompatability.|3|3|Restructure database to ensure compatability errors are dodged or excepted.|
+|1.3.1|Jenkins pipeline integration|Jenkins compatability with GitHub webhooks.|Worst case scenario builds are not triggered, resulting in inconsistent builds.|3|1|Maintain webhooks and pull/push requests, ensure branches merged correctly.|
+|1.3.2|Jenkins server exposed.|Port 8080 open to webtraffic is poor working practice.|Worst case scenario, introduce systemic vulnerabilities into build server.|5|3|Investigated ngrok as port tunelling service, impractical for small scale project.|
 
 ## Project Architecture
 ---
 
 ### Entity Relationships
 
+![The entity relationship diagram for the project, comprising the recipe, ingredients, and recipe_ingredients tables, and the unimplemented user table](https://i.imgur.com/XbLKyPc.png)
+
 The core of the project comprises three linked tables, two main and one joining, in a mySQL database. The joining table links data from recipe and ingredients tables to show which ingredients are used in the methods for particular recipes. This architecture reduces the load that would be required for multiple empty fields for recipes as different recipes have different numbers of ingredients used for them.
 
-Ancilliary to this are the user and admin tables, which aren't required to be instituted for project completion. This being said, they represent two different use cases for site approach. In terms of security and database management, they would have different permission roles and security provisions vis a vis the database itself, and most aspects of site architecture.
+Ancilliary to this are the user and admin tables, which aren't required to be instituted for project completion. This being said, they represent two different use cases for site approach. In terms of security and database management, they would have different permission roles and security provisions vis a vis the database itself, and most aspects of site architecture. As marks for this project are weighted toward backend technologies, as of project handoff, they have not been implemented.
 
-To represent this more clearly, I have included use case diagram.
+To represent these options more clearly, I have included a use case diagram.
 
 ### Overall Architecture
+
+
 
 ### Issues Encountered
