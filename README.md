@@ -64,6 +64,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 + Website updated to full compliance with brief. User stories revised to reflect updated understanding of technical complexities. Favicon added as joke branding. Jenkinsfile added, and installation and pre-installation processing started. Problems involving exported environmental variables.
 
++ Jenkins pipeline updated to include URL testing phase. ChilliApp now runs as a service, GUnicorn integration problematic, but can replace debug mode on deployment. In contravention of usual working practice, Jenkins server exposed to web traffic in place of a reverse proxy, as ngrok or nginx integration is an issue.
+
 ### End Point
 
 ## Risk Assessment
