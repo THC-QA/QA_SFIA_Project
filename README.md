@@ -99,6 +99,16 @@ To represent these options more clearly, I have included a use case diagram.
 
 ### Overall Architecture
 
+![The architecture diagram for the project, showing an overview of the languages and toolsets used to build, control, test, and deploy.](https://i.imgur.com/5quYapC.png)
 
+The project, known currently as ChilliApp, was built on a framework of python, with the use of the module Flask, and its extensions mysql_db and WTForms. The website displays using the Bootstrap API, with custom HTML and CSS stylings making use of Jinja2. Fully CRUD functional, it links to a mySQL server hosted on a GCP instance.
+
+Version controlled by way of GitHub, the project uses a WebHook to toggle Jenkins pipeline builds. This CI/CD server can be obfuscated by way of ngrok to prevent port exposure, but this was not kept for the project handover, as the free version hangs the terminal.
+
+The pipeline itself is coded in Groovy, making heavy use of BASH scripts to enable environment setup on the same GCP compute instance as the Jenkins server for testing.
+
+Testing itself is achieved using PyTest and the Selenium plugin for flask, discussed later.
+
+The finished build, if tests are passed, is deployed onto a worker node, where it launches using GUnicorn, at 6 nodes, to achieve poll stable load balancing.
 
 ### Issues Encountered
