@@ -1,0 +1,71 @@
+{%extends"layout.html"%}
+{%block body_content%}
+<!-- fulfils CRUD functionality requirements for the project brief, would be substantially altered for user/admin model -->
+<div class="container-fluid text-center">
+    <section >
+        <div class="row">
+            <div class="col-sm-4">
+               <h3>UPDATE</h3>
+               <div>
+                <form method="POST" action="" novalidate>
+                    <fieldset>
+                        <div>
+                            <legend>Update a recipe name:</legend>
+                            <label for="recipe_name">Recipe:</label><br>
+                            <select id="recipe_name" name="recipe_name"><br>
+                                {%for r in recipes%}
+                                <option value="{{r[0]}}">{{r[0]}}</option>
+                                {%endfor%}
+                            </select>
+                        </div>
+                        <div>
+                            <br><label for="new_name">New name:</label><br>
+                            <input type="text" id="new_name" name="new_name" required>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+               </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>DELETE</h3>
+                <div>
+                    <form method="POST" action="" novalidate>
+                        <fieldset>
+                            <div>
+                                <legend>Delete a recipe:</legend>
+                                <label for="recipe_name">Recipe:</label><br>
+                                <select id="recipe_name" name="recipe_name"><br>
+                                    {%for r in recipes%}
+                                    <option value="{{r[0]}}">{{r[0]}}</option>
+                                    {%endfor%}
+                                </select>
+                                <input type="submit" value="Delete">
+                            </div>
+                        </fieldset>
+                    </form>
+                   </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>DELETE</h3>
+                <div>
+                    <form method="POST" action="" novalidate>
+                        <fieldset>
+                            <div>
+                                <legend>Delete an ingredient:</legend>
+                                <label for="ingredient_name">Ingredient:</label><br>
+                                <select id="ingredient_name" name="ingredient_name"><br>
+                                    {%for r in ingredients%}
+                                    <option value="{{r[0]}}">{{r[0]}}</option>
+                                    {%endfor%}
+                                </select>
+                                <input type="submit" value="Delete">
+                            </div>
+                        </fieldset>
+                    </form>
+                   </div>
+            </div>
+        </div>
+    </section>
+</div>
+{%endblock body_content%}

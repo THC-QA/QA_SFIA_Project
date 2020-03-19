@@ -1,0 +1,14 @@
+<!doctype html>
+{%extends"layout.html"%}
+{%block body_content%}
+        <div class = "container">
+            <div class = "scrollable">
+                <!-- iterates through the recipes in the recipes table, connecting them with their attached ingredients -->
+                {%for key in index%}
+                    <h4>{{key}}</h4>
+                    <p>Recipe: {{recipes[key][0]}}</p>
+                    <p>Ingredients: {{recipes[key][1:]}} </p>
+                {%endfor%}
+            </div>
+        </div>
+{%endblock body_content%}

@@ -1,0 +1,7 @@
+[Unit]
+Description = ChilliApp_GUnicorn
+[Service]
+User=jenkins
+ExecStart = "/var/lib/jenkins/workspace/FlaskApp Example Pipeline/scripts/gunicorn.sh"
+[Install]
+WantedBy = multi-user.target
