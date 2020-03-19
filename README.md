@@ -170,7 +170,8 @@ Code representation:
             cur.execute("DELETE FROM recipes WHERE recipe_name = (%s);", [recipe_name])
         mysql.connection.commit()
         cur.close()
-        return redirect("/browse")```
+        return redirect("/browse")
+```
 
 A mix of WTForms and HTML form POST handling was used to avoid substantial issues with Dynamic Form handling in mysql_db integration.
 
@@ -593,7 +594,8 @@ Placeholder: polled Developer branch on 2020/03/19
   Date:   Wed Feb 19 15:14:38 2020 +0000
   
       Test file README from THC
-(END)```
+(END)
+```
 
 ## Front End Considerations
 
