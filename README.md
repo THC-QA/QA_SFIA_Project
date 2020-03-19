@@ -319,7 +319,10 @@ Placeholder: polled Developer branch on 2020/03/19
 | Author: THC-QA <Tristan.Clapp@academytrainee.com>
 | Date:   Thu Mar 19 12:04:26 2020 +0000
 | 
-|     chilli_app (import of project from [ChilliAppTemp](https://github.com/THC-QA/ChilliFlaskAppTemp/tree/dev))
+|     chilli_app
+```
+(import of project from [ChilliAppTemp](https://github.com/THC-QA/ChilliFlaskAppTemp/tree/dev))
+```
 | 
 * commit b8ff427ce85ae7059fa253730ec30fc56b00d4a1
 | Author: THC-QA <61196018+THC-QA@users.noreply.github.com>
