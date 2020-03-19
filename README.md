@@ -159,6 +159,10 @@ For the favicon, and placeholder branding design, a logo was created.
 
 ### Pytest
 
+There are two main branches within the Pytest testing stream; url_testing, and db_testing.
+
+Each of these are reflected in a separate stage within the Jenkinsfile pipeline instructions.
+
 ### Selenium
 
 ### Final Report
