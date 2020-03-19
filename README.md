@@ -17,22 +17,22 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
     + [Entity Relationship Diagram](#entity-relationship-diagram)
     + [Architecture Diagram](#architecture-diagram)
     + [Issues Encountered](#issues-encountered)
-5. Design Considerations
-    + Front End
-    + Back End
-    + UI
-6. Testing
-    + Pytest Testing
-    + Postman Testing
-    + Final Report
-7. Deployment
-    + Toolset
-    + CI Server Implementation
-    + Branch and Merge Log
-8. Front End Implementation
-9. Improvements for Future Versions
-+ Authors
-+ Acknowledgements
+5. [Design Considerations](#design-considerations)
+    + [Front End](#front-end)
+    + [Back End](#back-end)
+    + [UI](#ui)
+6. [Testing](#testing)
+    + [Pytest Testing](#pytest)
+    + [Selenium Testing](#selenium)
+    + [Final Report](#final-report)
+7. [Deployment](#deployment)
+    + [Toolset](#toolset)
+    + [CI Server Implementation](#ci-server-implementation)
+    + [Branch and Merge Log](#branch-and-merge-log)
+8. [Front End Considerations](#front-end-considerations)
+9. [Improvements for Future Versions](#improvements-for-future-versions)
++ [Authors](#authors)
++ [Acknowledgements](#acknowledgements)
 
 ## Project Brief
 ---
@@ -65,6 +65,8 @@ At the start of the project, I focussed on the four tasks most easily completabl
 + Website updated to full compliance with brief. User stories revised to reflect updated understanding of technical complexities. Favicon added as joke branding. Jenkinsfile added, and installation and pre-installation processing started. Problems involving exported environmental variables.
 
 + Jenkins pipeline updated to include URL testing phase. ChilliApp now runs as a service, GUnicorn integration problematic, but can replace debug mode on deployment. In contravention of usual working practice, Jenkins server exposed to web traffic in place of a reverse proxy, as ngrok or nginx integration is an issue.
+
++ Having looked hard at the feasibility of utilising Postman as an ancilliary service to the project, I elected to use Selenium after all. The time requirements for learning to use the program and creating a mockup could be better spent learning to use HTML id tags properly.
 
 ### End Point
 
@@ -112,3 +114,68 @@ Testing itself is achieved using PyTest and the Selenium plugin for flask, discu
 The finished build, if tests are passed, is deployed onto a worker node, where it launches using GUnicorn, at 6 nodes, to achieve poll stable load balancing.
 
 ### Issues Encountered
+
++ Swapped out SQLAlchemy for mysql_db.
+
++ Serious difficulties getting WTForms to take dynamic fields.
+
++ Used NGROK for port tunnelling until finding limitations of free version.
+
++ Ran into a lot of user permissions errors with Jenkins, studied the documentation
+
++ Ran into polling issues with GUnicorn
+
+## Design Considerations
+
+### Front End
+
+Front end issues were not a focus for this project.
+
+That being said, the bootstrap template was overridden in places with custom CSS stylings, and Jinja2 was used to inherit styling from the master layout template, and handle python form data objects for display.
+
+### Back End
+
+Agile principles of functional code over documentation and prioritisation of working builds lead to a pursuit of lowest path of resistance design.
+
+App routes and functions in the project are prioritised to be multi function, using the variance of polled form data to determine data endpoints. An example programmatic flow chart is included for reference.
+
+![Flow chart demonstrating process flow for the mvp page POST request handling stream](https://i.imgur.com/fHCiX9z.png)
+
+A mix of WTForms and HTML form POST handling was used to avoid substantial issues with Dynamic Form handling in mysql_db integration.
+
+To prevent SQL conflicts, the mySQL instance data structure was chosen quite carefully. Examples of this would be the paired usage of IGNORE statements and UNIQUE keywords, to prevent col return errors.
+
+Display of the database on the /browse page required careful understanding of the return structure of read data. A three table join was used to ensure that ingredients were linked to their correct recipes, and a nested set of for loops enables their handling and restructuring for Jinja display.
+
+### UI
+
+Beyond native bootstrap stylings, UI considerations were not at the forefront. Submissions boxes are selected to allow clear display and entry of data. Although the website itself is suited to wide aspect display and updated browsers, it still displays on phone browsers with minimal errors.
+
+For the favicon, and placeholder branding design, a logo was created.
+
+![ChilliApp Logo](https://i.imgur.com/8S5k1lK.gif)
+
+## Testing
+
+### Pytest
+
+### Selenium
+
+### Final Report
+
+## Deployment
+
+### Toolset
+
+### CI Server Implementation
+
+### Branch and Merge Log
+
+## Front End Considerations
+
+## Improvements for Future Versions
+
+---
+#### Authors
+
+#### Acknowledgements
