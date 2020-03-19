@@ -1,0 +1,74 @@
+<!doctype html>
+{%extends"layout.html"%}
+{%block body_content%}
+<div class="container-fluid text-center">
+    <section >
+        <div class="row">
+            <div class="col col-sm-4">
+                <h3>Submit an Anonymous Recipe</h3>
+                <p>
+                    <form method="POST" action="" novalidate>
+                        {{recipe_form.hidden_tag()}}
+                        <p>
+                            {{recipe_form.recipe_name.label}}<br>
+                            {{recipe_form.recipe_name}}
+                        </p>
+                        <p>
+                            {{recipe_form.recipe_method.label}}<br>
+                            {{recipe_form.recipe_method}}
+                        </p>
+                        <p>{{recipe_form.submit()}}</p>
+                    </form>
+                </p>
+            </div>
+            <div class="col col-sm-4">
+                <h3>Submit an Anonymous Ingredient</h3>
+                <p>
+                    <form method="POST" action="" novalidate>
+                        {{ingredient_form.hidden_tag()}}
+                        <p>
+                            {{ingredient_form.ingredient_name.label}}<br>
+                            {{ingredient_form.ingredient_name}}
+                        </p>
+                        <p>
+                            {{ingredient_form.ingredient_type.label}}<br>
+                            {{ingredient_form.ingredient_type}}
+                        </p>
+                        <p>{{ingredient_form.submit()}}</p>
+                    </form>
+                </p>
+            </div>
+            <div class="col col-sm-4">
+                <!-- first two submits based off WTForms, couldn't get dynamic select fields to work, so this one is standard HTML -->
+                <h3>Link Ingredients</h3>
+               <div>
+                <form method="POST" action="" novalidate>
+                    <fieldset>
+                        <div>
+                            <legend>Connect a recipe to its ingredients:</legend>
+                            <label for="recipe_name">Recipe:</label><br>
+                            <select id="recipe_name" name="recipe_name" required><br>
+                                {%for r in recipes%}
+                                    <option value="{{r[0]}}">{{r[0]}}</option>
+                                {%endfor%}
+                            </select>
+                        </div>
+                        <div>
+                            <label for="ingredient_name">Ingredient:</label><br>
+                            <select id="ingredient_name" name="ingredient_name" required><br>
+                                {%for i in ingredients%}
+                                    <option value="{{i[0]}}">{{i[0]}}</option>
+                                {%endfor%}
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Connect">
+                        </div>
+                    </fieldset>
+                </form>
+               </div>
+            </div>
+        </div>
+    </section>
+</div>
+{%endblock body_content%}

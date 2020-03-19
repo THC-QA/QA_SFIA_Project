@@ -1,0 +1,6 @@
+include ChilliApp/requirements.txt
+include ChilliApp/Jenkinsfile
+graft ChilliApp/static
+graft ChilliApp/templates
+graft ChilliApp/scripts
+global-exclude *.pyc

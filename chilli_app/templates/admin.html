@@ -1,0 +1,35 @@
+<!doctype html>
+{%extends"layout.html"%}
+{%block body_content%}
+<!-- page and accompanying form shelved due to lack of support for dynamic forms in WTForms, would require javascript -->
+<div class="container-fluid text-center">
+    <section >
+        <div class="row">
+            <div class="col col-sm-4">
+               <h3>UPDATE</h3>
+               <div>
+                <form method="POST" action="" novalidate>
+                    {{update_form.hidden_tag()}}
+                    <div class="form-group">
+                    <p>
+                        {{update_form.table_selection.label}}<br>
+                        {{update_form.table_selection}}
+                    </p>
+                    <p>
+                        {%if update_form.table_selection != ""%}
+                            {{update_form.name.label}}<br>
+                            {{update_form.new_name}}
+                        {%endif%}
+                    </p>
+                    <p>{{update_form.submit()}}</p>
+                    </div>
+                </form>
+               </div>
+            </div>
+            <div class="col col-sm-4">
+                <h3>DELETE</h3>
+            </div>
+        </div>
+    </section>
+</div>
+{%endblock body_content%}

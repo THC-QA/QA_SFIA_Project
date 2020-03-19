@@ -1,0 +1,40 @@
+<!doctype html>
+{%extends"layout.html"%}
+{%block body_content%}
+<div class="container-fluid text-center">
+    <section >
+        <div class="row">
+            <div class="col col-sm-4">
+                <h3>Random Ingredients</h3>
+                <!-- as title, awaiting implementation of inline artifact linking -->
+                <p>
+                    {%for i in ingredients%}
+                        <br>{{i[0]}}<br>---
+                    {%endfor%}
+                </p>
+            </div>
+            <div class="col col-sm-4">
+                <h3>Related</h3>
+                <!-- 'friends of the site' flavour text -->
+                <p>
+                    <p><a href="https://old.reddit.com/r/hotsaucerecipes">
+                        <img alt="Hotsauce Recipes on Reddit" src="https://www.redditinc.com/assets/images/site/logo.svg" width="70" height="70">
+                    </a></p>
+                </p>
+            </div>
+            <div class="col col-sm-4">
+                <h3>Random Recipes</h3>
+                <!-- were user groups to be implemented, could switch to rating system -->
+                <div class="scrollable">
+                    <p>
+                        {%for r in recipes%}
+                            <br><h5>{{r[0]}}</h5>
+                            {{r[1]}}<br>
+                        {%endfor%}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{%endblock body_content%}
