@@ -15,8 +15,8 @@ pipeline{
         stage("urlTesting"){
             steps{
                 sh 'echo "test page availability and status"'
-                sh 'python3 -m coverage run pytest tests/url_testing.py'
-                sh 'python3 -m coverage report'
+                sh 'python3 -m coverage run -m pytest tests/url_testing.py'
+                sh 'python3 -m coverage report -m'
             }
 
         }
