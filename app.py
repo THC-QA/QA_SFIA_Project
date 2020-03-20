@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash, redirect
 from flask_mysqldb import MySQL
 import os
 from forms import *
-
+# IMPORTS
 app = Flask(__name__)
 
 # Call config variables from pre-assigned environmentals, check Jenkinsfile for preferred source
