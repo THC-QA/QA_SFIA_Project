@@ -1,7 +1,7 @@
 # README
 ---
 # Hot Sauce Recipe Database
----
+
 Written in reference to QAC - Fundamental Project Specification (DevOps Core) - revised edition. This project is for the purpose of fulfilling the specification definition for the project assignment due Week 5 of the DevOps February 17 2020 intake cohort.
 
 ## Table of Contents
@@ -35,12 +35,14 @@ Written in reference to QAC - Fundamental Project Specification (DevOps Core) - 
 + [Acknowledgements](#acknowledgements)
 
 ## Project Brief
----
+
+The project requires a CRUD functional website, based around a database with at least two tables joined by a joining table, with backend written in Python, fully version controlled, tested, and deployed via a Jenkins CI server.
 
 ### Proposal
 
+My proposal focuses on the creation of a website for the sharing of hot sauce recipes. Recipes and ingredients can be added, and both can be joined on a joining table exhibiting a many to many relationship. The project will be autobuilt using a Jenkins pipeline with webhooks.
+
 ## Trello Board
----
 
 I used a kanban board on Trello to manage my workflow during the project, the board was set to public to enable overview and broadcast. Agile methodology was implemented in line with the brief, in terms of product and sprint backlog, although due to the individual nature of the project, no scrum working practices were implemented. The board was set up with reference to potential user stories emphasising the CRUD functionality of the database system. Although unrequired, a Task Backlog was instituted in order to keep the requirements of the project spec clear, so as to enable sprint tasks to be dynamically allocated to them.
 
@@ -71,7 +73,7 @@ At the start of the project, I focussed on the four tasks most easily completabl
 ### End Point
 
 ## Risk Assessment
----
+
 
 |Risk No.|Risk|Description|Hazard|Likelihood|Impact|Solution|
 |---|---|---|---|---|---|---|
@@ -87,7 +89,6 @@ At the start of the project, I focussed on the four tasks most easily completabl
 |1.3.2|Jenkins server exposed.|Port 8080 open to webtraffic is poor working practice.|Worst case scenario, introduce systemic vulnerabilities into build server.|5|3|Investigated ngrok as port tunelling service, impractical for small scale project.|
 
 ## Project Architecture
----
 
 ### Entity Relationships
 
@@ -248,6 +249,8 @@ As of 2020/03/19.
 + Pipeline build coded in Groovy and Shell.
 
 + Testing in Pytest using the Coverage module.
+
++ ~Front end testing in Selenium.~ [Not cooperating with mysql_db, fix pending]
 
 + 2 build run using debug mode and a GUnicorn 6 node mirror.
 
@@ -616,6 +619,7 @@ For future considerations, particularly regarding the usage of python as a web d
 
 In addition to front end considerations, an enterprise version of the app would require a change in the deployment and testing cycle.
 
+Even before thinking about containerisation or distribution of core functionalities, the current exposure of various ports would have to be 
 #### Authors
 
 #### Acknowledgements
