@@ -72,6 +72,14 @@ At the start of the project, I focussed on the four tasks most easily completabl
 
 ### End Point
 
+![A picture of the endpoint of the Trello KanBan board, focusing on the unfinished tasks, and product backlog](https://i.imgur.com/mXio1OW.png)
+
+By the completion date of the project, the remaining tasks were focused on the testing implementation. This does not constitute an issue, as front end testing had been removed from the product specification by the project owner.
+
+However, on a personal note, learning how to correctly implement either Selenium or Postman would be a useful skill to add to the ongoing portfolio.
+
+Two product backlog items remained incomplete, as the login feature promised to be supplied by the project owner never materialised, leading to a redesign around the remaining feature requirements.
+
 ## Risk Assessment
 
 
@@ -619,7 +627,14 @@ For future considerations, particularly regarding the usage of python as a web d
 
 In addition to front end considerations, an enterprise version of the app would require a change in the deployment and testing cycle.
 
-Even before thinking about containerisation or distribution of core functionalities, the current exposure of various ports would have to be 
+Even before thinking about containerisation or distribution of core functionalities, the current exposure of various ports would have to be handled using tunnelling or reverse proxy by NGINX or a similar toolset.
+
+The original intention was to have the final build deployed post test onto a separate instance, but this was halted due to budget considerations. A proper project should be able to be expanded on demand, with instances spun up, provisioned, and deployed via an automated system. A Docker and Ansible configuration, potentially using a more mature cloud technology platform, would be advisable.
+
 #### Authors
 
+THC - current QA Academy Trainee.
+
 #### Acknowledgements
+
+Thank you to everyone who offered help from the Cohort, and the various trainers whom I terrified with pointed questions.
