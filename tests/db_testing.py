@@ -14,6 +14,8 @@ app.config['MYSQL_DB'] = 'testing'
 
 mysql = MySQL(app)
 
+# Start stable test loop
+
 def test_empty():
     with app.app_context():
         cur = mysql.connection.cursor()
