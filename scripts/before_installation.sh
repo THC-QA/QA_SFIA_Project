@@ -1,13 +1,13 @@
 #!/bin/bash
 
-sudo apt update -y
+apt update -y
 
-sudo apt install python3 -y
+apt install python3 -y
 
-sudo apt install python3-pip -y
+apt install python3-pip -y
 
-sudo apt install python3-venv -y
+apt install python3-venv -y
 
-sudo apt-get install libmysqlclient-dev -y
+apt-get install libmysqlclient-dev -y
 
 python3 -m venv venv
